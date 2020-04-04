@@ -11,10 +11,9 @@ html {
 }
 
 .container {
-    padding: 0px 100px 0px 100px;
+    background-color: rgb(18, 18, 18);
 }
 
-nav ul,
 .landing,
 .aboutMeInfo,
 .mySkillsInfo,
@@ -29,36 +28,117 @@ body{
     color: white;
 }
 
-header{
+nav{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 18px, 0;
-}
-
-.navbar{
+    align-items: center;
+    min-height: 8vh;
     background-color: #0e0e0e;
-    padding-top: 50px;
-    margin-left: -20px;
     z-index: 1;
-    position: relative;
 }
 
-.navbar a {
+.logo{
+    margin-left: 80px;
+    color: #b0b0b0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.navLinks{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+
+.navLinks a {
     text-decoration: none;
     font-size: .9rem;
     text-transform: uppercase;
-    position: relative;
-    top: 50%;
-    bottom: 50%;
-    transform: translateY(-50%);
+    letter-spacing: 3px;
 }
 
-.navbar a:hover{
+.navLinks a:hover{
     color: white;
     transition: ease 0.7s;
 
 }
+
+.burger {
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 2px;
+    background-color: #b0b0b0;
+    margin: 5px;
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 600px){
+    body{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 780px){
+    body{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .navLinks{
+        padding-top: 120px;
+        margin-right: 0;
+        padding-bottom: 120px;
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #252627;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        z-index: 8;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .navLinks li{
+        opacity:0;
+    }
+    .burger{
+        display: block;
+        margin-right: 40px;
+        cursor: pointer;
+    }
+}
+
+.navActive{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,5px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-5px);
+}
+
 header h1,
 header a,
 .mainInfo p,
@@ -79,7 +159,7 @@ li{
 }
 
 #particleDiv{
-    top: 0;
+    top: 0em;
     height: 1400px;
     background-image: url(images/landing1.png);
     background-size: cover;

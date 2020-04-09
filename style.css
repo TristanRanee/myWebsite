@@ -117,11 +117,15 @@ nav{
         z-index: 19;
     }
 
-    .buttons{
+    .buttons a {
         width: 50%;
     }
     .deskPhoto1{
         width: 71vw;
+    }
+
+    .card {
+        display: block;
     }
 }
 
@@ -263,9 +267,10 @@ span.tags{
     color: mediumslateblue;
 }
 
-
 .buttons a{
     padding: 12px 25px;
+    text-align: center;
+    width: 160px;
     background-color: none;
     border: 3px solid mediumslateblue;
     color: rgb(153, 138, 237);
@@ -277,6 +282,7 @@ span.tags{
     overflow: hidden;
     transition: 0.5s;
     display: inline-block;
+    text-decoration: none;
 }
 
 .buttons a:hover{
@@ -327,6 +333,19 @@ span.tags{
     z-index: 7;
 }
 
+.deskPhoto2 img{
+    width: 700px;
+    height: 480px;
+    box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.5);
+    border:solid black 2px;
+    position: relative;
+    top: -550px;
+    right: -63%;
+    transform: translate(-50%);
+    object-fit: cover;
+    object-position: 100% 9%;    
+    z-index:0;
+}
 .about{
     position: relative;
     top: -170px;
@@ -467,27 +486,80 @@ div[class^= 'bar-'] {
 }
 
 .projects{
-    height: 100vh;
+    
     margin-left: 80px;
+    padding: 0 2rem;
 }
 
+.projects h1{
+    margin-bottom: 100px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    background: none;
+    margin-bottom: 3rem;
+}
+
+.card h3 {
+    top: 0;
+    color: mediumslateblue;
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.card h4{
+    font-size: 1.4rem;
+    opacity: .3;
+    color: #b0b0b0;
+    margin-bottom: 0.5rem;
+}
+.card p{
+    padding-bottom: 1rem;
+    line-height: 38px;
+    font-size: 1.5rem;
+}
+.card img {
+    height: 30vw;
+    max-width: 600px;
+}
+  
+.card > div {
+    padding: 2rem;
+}
+  
+.card:nth-child(even) img {
+    order: 2;
+}
+  
+.experience{
+    margin-top: 300px;
+}
+
+.experience h1{
+    margin-left: 80px;
+}
 .experienceInfo{
     position: relative;
     margin: 50px auto;
     padding: 40px 0;
     width: 1000px;
     box-sizing: border-box;
+    background-color: none;
 }
-.experienceInfo:before{
-    content: ' ';
+.experienceInfo::before{
+    content: '';
     position: absolute;
-    left: 50%;
+    left: 48%;
     width: 2px;
     height: 100%;
     background: #c5c5c5;
 }
+
 .experienceInfo ul{
-    margin: 0;
+    margin-right: 80px;
     padding: 0;
 }
 
@@ -515,11 +587,11 @@ div[class^= 'bar-'] {
     padding-bottom: 20px;
 }
 
-.experienceInfo ul li:nth-child(odd):before{
-    content: ' ';
+.experienceInfo ul li:nth-child(odd)::before{
+    content: '';
     position: absolute;
     top: 28px;
-    right:-16px;
+    right:-33px;
     width: 10px;
     height: 10px;
     background: mediumslateblue;
@@ -527,11 +599,11 @@ div[class^= 'bar-'] {
     box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
 }
 
-.experienceInfo ul li:nth-child(even):before{
+.experienceInfo ul li:nth-child(even)::before{
     content: ' ';
     position: absolute;
     top: 28px;
-    left:-44px;
+    left: -21px;
     width: 10px;
     height: 10px;
     background: mediumslateblue;
@@ -540,9 +612,8 @@ div[class^= 'bar-'] {
 }
 
 .experienceInfo ul li h3{
-    margin: 0;
+    margin-top: 20px;
     padding: 0;
-    font-weight: 600;
     color:mediumslateblue;
 }
 
@@ -553,16 +624,17 @@ div[class^= 'bar-'] {
 }
 
 .experienceInfo ul li .time h4{
+    position: relative;
+    text-align: center;
     margin: 0;
     padding: 0;
     font-size: 14px;
-
 }
 
-.experienceInfo ul li:nth-child(odd) .time{
-    position: absolute;
-    top: 12px;
-    right: -145px;        
+.experienceInfo ul li:nth-child(even) .time{
+    position: relative;
+    width: 140px;
+    right: 0px;        
     margin: 0;
     padding: 8px 16px;
     background: mediumslateblue;
@@ -571,10 +643,11 @@ div[class^= 'bar-'] {
     box-shadow: 0 0 0 1.8px rgba(137, 108, 167, 0.712);
 }
 
-.experienceInfo ul li:nth-child(even) .time{
-    position: absolute;
-    top: 12px;
-    left: -185px;        
+.experienceInfo ul li:nth-child(odd) .time{
+    position: relative;
+    width: 140px;
+    top: 0px;
+    left: 200px;        
     margin: 0;
     padding: 8px 16px;
     background: mediumslateblue;

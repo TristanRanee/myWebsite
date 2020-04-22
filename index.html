@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tristan's Website</title>
-    <link rel="styleSheet" type="text/css" href="style.css">
+    <link rel="styleSheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="styleSheet" type="text/css" href="style.css"/>
 
 </head>
 
 <body>
-    <div class="navbar container">
+    <div class="navbar container"data-aos="fade">
         <header>
             <nav>
                 <div class="logo">
@@ -30,10 +31,11 @@
             </nav>
         </header>
     </div>
+    <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
     <div class="home" id="home">
         <div class="container landing" id="particleDiv">
         </div>
-        <div class="mainInfo">
+        <div class="mainInfo"data-aos="fade-down">
             <h1>
                 <span>Hi,</span>
                 <span>I'm</span>
@@ -69,21 +71,17 @@
 
     <div class="container gradient" id="gradient"></div>
 
-    <div class="container about" id="about">
-        <h1>Who am I?</h1>
-        <div class="aboutMeInfo">
+    <div class="container about" id="about" data-aos="fade-up">
+        <h1 data-aos="fade-up">Who am I?</h1>
+        <div class="aboutMeInfo" >
             <p>
                 Filler text. This is stuff about me Filler text. This is stuff about me Filler text. This is stuff about me Filler text. 
                 This is stuff about me Filler text. This is stuff about me.Filler text. This is stuff about me Filler text. This is stuff about me Filler text. This is stuff about me Filler text. 
                 This is stuff about me Filler text. This is stuff about meFiller text. This is stuff about me Filler text. This is stuff about me Filler text. This is stuff about me Filler text. 
                 This is stuff about me Filler text. This is stuff about meFiller text. This is stuff about me Filler text. This is stuff about me Filler text. This is stuff about me Filler text. 
-                This is stuff about me Filler text. This is stuff about meFiller text. This is stuff about me Filler text. This is stuff about me Filler text. This is stuff about me Filler text. 
-                This is stuff about me Filler text. This is stuff about meFiller text. This is stuff about me Filler text. This is stuff about me Filler text. This is stuff about me Filler text. 
-                This is stuff about me Filler text. This is stuff about meFiller text. This is stuff about me Filler text. This is stuff about me Filler text. This is stuff about me Filler text. 
-                This is stuff about me Filler text. This is stuff about me.
             </p>
         </div>
-        <div class="deskPhoto1">
+        <div class="deskPhoto1" >
             <img src="images/deskPhoto.jpg" alt="">
         </div>        
         <div class="deskPhoto2">
@@ -91,8 +89,8 @@
         </div> 
     </div>
 
-    <div class="container skills" id="skills">
-        <h1>Skills</h1>
+    <div class="container skills" id="skills"data-aos="fade-up">
+        <h1 data-aos="fade-up">Skills</h1>
         <p class="mySkillsInfo">Stuff about my skills</p>
 
         <div class="altium">
@@ -143,8 +141,8 @@
     </div>
 
     <div class="container projects" id="projects">
-        <h1>Projects</h1>
-        <section class="card">
+        <h1 data-aos="fade-up">Projects</h1>
+        <section class="card" data-aos="fade-right">
             <img src="https://i.ibb.co/VvC0vpN/paint-1.png" alt="" />
             <div>
                 <h3>Bionic Hand</h3>
@@ -242,14 +240,14 @@
 
     </div>
     <div class="container experience" id="experience">
-        <h1>Experience</h1>
+        <h1 data-aos="fade-up">Experience</h1>
         <div class="experienceInfo">
             <ul>
                 <li>
-                    <div class="time">
+                    <div class="time" data-aos="fade-left">
                         <h4> June 2018</h4>
                     </div>
-                    <div class="content">
+                    <div class="content" data-aos="fade-left">
                         <h3> UNSW ENGSOC: Volunteer Development Program </h3>
                         <p> dummy textdummy textdummy textdummy textdummy textdummy 
                             dummy textdummy textdummy textdummy textdummy textdummy textdummy text
@@ -259,10 +257,10 @@
                     </div>                       
                 </li>
                 <li>
-                    <div class="time">
+                    <div class="time"data-aos="fade-right">
                         <h4> July 2018</h4>
                     </div>
-                    <div class="content">
+                    <div class="content"data-aos="fade-right">
                         <h3> UNSW ENGSOC: Engineering Industries Program </h3>
                         <p> dummy textdummy textdummy textdummy textdummy textdummy 
                             dummy textdummy textdummy textdummy textdummy textdummy textdummy text
@@ -272,10 +270,10 @@
                     </div>                        
                 </li>
                 <li>
-                    <div class="time">
+                    <div class="time"data-aos="fade-left">
                         <h4> September 2018</h4>
                     </div>
-                    <div class="content">
+                    <div class="content"data-aos="fade-left">
                         <h3> UNSW Illuminate VIVID 2019: Electrical Sublead</h3>
                         <p> dummy textdummy textdummy textdummy textdummy textdummy 
                             dummy textdummy textdummy textdummy textdummy textdummy textdummy text
@@ -285,10 +283,10 @@
                     </div>                       
                 </li>
                 <li>
-                    <div class="time">
+                    <div class="time"data-aos="fade-right">
                         <h4> January 2019</h4>
                     </div>
-                    <div class="content">
+                    <div class="content"data-aos="fade-right">
                         <h3> UNSW Heroes Program</h3>
                         <p> dummy textdummy textdummy textdummy textdummy textdummy 
                             dummy textdummy textdummy textdummy textdummy textdummy textdummy text
@@ -298,10 +296,10 @@
                     </div>                        
                 </li>
                 <li>
-                    <div class="time">
+                    <div class="time"data-aos="fade-left">
                         <h4> February 2019</h4>
                     </div>
-                    <div class="content">
+                    <div class="content"data-aos="fade-left">
                         <h3> UNSW Casual Academic :EE&T Laboratory Demonstrator</h3>
                         <p> dummy textdummy textdummy textdummy textdummy textdummy 
                             dummy textdummy textdummy textdummy textdummy textdummy textdummy text
@@ -311,10 +309,10 @@
                     </div>                        
                 </li>
                 <li>
-                    <div class="time">
+                    <div class="time"data-aos="fade-right">
                         <h4> May 2019</h4>
                     </div>
-                    <div class="content">
+                    <div class="content"data-aos="fade-right">
                         <h3> UNSW Illuminate VIVID 2020: Electrical Lead</h3>
                         <p> dummy textdummy textdummy textdummy textdummy textdummy 
                             dummy textdummy textdummy textdummy textdummy textdummy textdummy text
@@ -324,10 +322,10 @@
                     </div>                        
                 </li>
                 <li>
-                    <div class="time">
+                    <div class="time"data-aos="fade-left">
                         <h4> June 2019</h4>
                     </div>
-                    <div class="content">
+                    <div class="content"data-aos="fade-left">
                         <h3> EMOTIV Research: Hardware Product Development Intern</h3>
                         <p> dummy textdummy textdummy textdummy textdummy textdummy 
                             dummy textdummy textdummy textdummy textdummy textdummy textdummy text
@@ -337,10 +335,10 @@
                     </div>                        
                 </li>
                 <li>
-                    <div class="time">
+                    <div class="time"data-aos="fade-right">
                         <h4> February 2020</h4>
                     </div>
-                    <div class="content">
+                    <div class="content"data-aos="fade-right">
                         <h3> UNSW Neural Stimulator: Technical Lead</h3>
                         <p> dummy textdummy textdummy textdummy textdummy textdummy 
                             dummy textdummy textdummy textdummy textdummy textdummy textdummy text
@@ -354,7 +352,7 @@
         </div>
     </div>
 
-    <div class="container contact" id="contact">
+    <div class="container contact" id="contact" data-aos="fade-up">
         <h1>Contact</h1>
         <form>
             <input type="text" name="name" placeholder="Full name">
@@ -369,14 +367,21 @@
         <hr>
         <p>2020 Copyright. All Rights Reserved</p>
     </footer>
-
+    
     <script src="js/particles/particles.js"></script>
     <script>particlesJS.load("particleDiv", "js/particlesjs-config.json")</script>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+    <script src="js/TimelineLite.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     
-    <script src="js/script.js"></script>
 </body>
 </html>

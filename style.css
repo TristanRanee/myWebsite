@@ -38,6 +38,64 @@ nav{
     z-index: 5;
 }
 
+#back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    font-size: 26px;
+    width: 60px;
+    height: 60px;
+    background-color:mediumslateblue;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    border: 4px solid #333;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+    z-index: 99;
+}
+
+#back-to-top-btn:hover, #back-to-top-btn:focus {
+  background-color: #333;
+  color: #fff;  
+}
+.btnEntrance {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
+}
+
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.btnExit {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;  
+  animation-name: btnExit;
+}
+
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+  
+
 .logo{
     margin-left: 80px;
     color: #b0b0b0;
@@ -127,6 +185,7 @@ nav{
     .card {
         display: block;
     }
+    #back-to-top-btn {bottom: 20px; right: 20px; }
 }
 
 @media screen and (max-width: 1450px){
@@ -323,7 +382,6 @@ span.tags{
     width: 700px;
     height: 480px;
     box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.5);
-    border:solid black 2px;
     position: relative;
     top: -150px;
     right: -69%;
@@ -337,7 +395,6 @@ span.tags{
     width: 700px;
     height: 480px;
     box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.5);
-    border:solid black 2px;
     position: relative;
     top: -550px;
     right: -63%;

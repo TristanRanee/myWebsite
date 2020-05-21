@@ -47,7 +47,8 @@ nav{
     width: 60px;
     height: 60px;
     background-color:mediumslateblue;
-    color: #333;
+    color: rgb(191, 191, 191);
+    font-size: 2rem;
     cursor: pointer;
     outline: none;
     border: 4px solid #333;
@@ -100,8 +101,8 @@ nav{
     margin-left: 80px;
     color: #b0b0b0;
     text-transform: uppercase;
-    letter-spacing: 40px;
-    font-size: 50px;
+    letter-spacing: 30px;
+    font-size: 70px;
 }
 
 .navLinks{
@@ -309,7 +310,7 @@ li{
     z-index:1;
 }
 
-span.mLeft{
+span.mLeft, a.mLeft{
     color: mediumslateblue;
 }
 
@@ -436,6 +437,8 @@ span.tags{
 
 .aboutMeInfo p{
     font-size: 1.3rem;
+    line-height: 2.3rem;
+    padding-bottom: 30px;
     color: #b0b0b0;
 }
 
@@ -447,6 +450,11 @@ span.tags{
 .skills{
     margin-top: 400px;
     height: 100vh;
+}
+
+.skills p{
+    text-align: left;
+    line-height: 2.3rem;
 }
 
 .skills h1, .contact h1{
@@ -510,12 +518,13 @@ div [class^= 'tag-']{
     height: 30px;
     background-color: mediumslateblue;
     margin-right: 30px;
+    margin-top: 3rem;
 }
 
 div[class^= 'tag-'] p{
     color: white;
     text-align: left;
-    padding-left: 10px;
+    padding-left: 1.4em;
     font-size: 1.1rem;
     padding-top: 3px;
 }
@@ -526,21 +535,85 @@ div[class^= 'tag-'] p{
     height: 20px;
     border: 2px solid mediumslateblue;
     border-radius: 20px;
-    margin-top: 7px;
+    margin-top: 3.4rem;
 }
 
-div[class^= 'bar-'] {
+.bar-altium {
     position: absolute;
     background-color: mediumslateblue;
     height: 10px;
     border-radius: 20px;
     margin: 2.7px;
+    width: 90%;
+    animation: bar-altium 2s;
 }
 
-.bar-altium, .barC, 
-.bar-Python, .bar-Matlab {
-    width: calc(0-6px);
+@keyframes bar-altium {
+    0%{ width: 0%;}
+    100%{width: 90%;}
 }
+
+.bar-spice{
+    position: absolute;
+    background-color: mediumslateblue;
+    height: 10px;
+    border-radius: 20px;
+    margin: 2.7px;
+    width: 90%;
+    animation: bar-spice 2s;
+}
+
+@keyframes bar-spice {
+    0%{ width: 0%;}
+    100%{width: 90%;}
+}
+
+.bar-C{
+    position: absolute;
+    background-color: mediumslateblue;
+    height: 10px;
+    border-radius: 20px;
+    margin: 2.7px;
+    width: 60%;
+    animation: bar-C 2s;
+}
+
+@keyframes bar-C {
+    0%{ width: 0%;}
+    100%{width: 60%;}
+}
+
+.bar-python{
+    position: absolute;
+    background-color: mediumslateblue;
+    height: 10px;
+    border-radius: 20px;
+    margin: 2.7px;
+    width: 50%;
+    animation: bar-python 2s;
+}
+
+@keyframes bar-python {
+    0%{ width: 0%;}
+    100%{width: 50%;}
+}
+
+.bar-matlab {
+    position: absolute;
+    background-color: mediumslateblue;
+    height: 10px;
+    border-radius: 20px;
+    margin: 2.7px;
+    width: 70%;
+    animation: bar-matlab 2s;
+}
+
+@keyframes bar-matlab {
+    0%{ width: 0%;}
+    100%{width: 70%;}
+}
+
+
 
 .projects{
     
@@ -574,13 +647,15 @@ div[class^= 'bar-'] {
     margin-bottom: 0.5rem;
 }
 .card p{
-    padding-bottom: 1rem;
     line-height: 38px;
     font-size: 1.5rem;
 }
 .card img {
     height: 30vw;
-    max-width: 600px;
+    margin-top: 40px;
+    max-width: 80%;
+    object-fit: cover;
+    border: 2px solid rgb(116, 92, 249);
 }
   
 .card > div {
